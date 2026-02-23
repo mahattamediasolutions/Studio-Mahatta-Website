@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Work — Studio Mahatta</title>
+  <meta name="description" content="Selected projects by Studio Mahatta — documentaries, brand films, animation, and OTT IP." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ── Navigation ── -->
+  <nav class="nav" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a class="nav__logo" href="index.html">Studio Mahatta</a>
+      <ul class="nav__links" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="work.html">Work</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="btn">Get in Touch</a></li>
+      </ul>
+      <button class="nav__toggle" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ── Mobile overlay ── -->
+  <div class="nav__overlay" role="dialog" aria-label="Navigation menu">
+    <span class="t-eyebrow" style="color:var(--muted)">Navigation</span>
+    <a href="index.html">Home</a>
+    <a href="work.html">Work</a>
+    <a href="services.html">Services</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <p class="nav__overlay-sub">contact@studiomahatta.com</p>
+  </div>
+
+  <!-- ── Page Header ── -->
+  <header class="page-header">
+    <div class="container">
+      <p class="page-header__eyebrow">Selected Projects</p>
+      <h1 class="section-title" style="font-family:var(--font-serif);font-size:clamp(44px,7vw,96px);font-weight:300">Work</h1>
+    </div>
+  </header>
+
+  <!-- ── Work Section ── -->
+  <main>
+    <section class="section" style="padding-top:0">
+      <div class="container">
+
+        <!-- Filters -->
+        <div class="work-filters reveal" role="group" aria-label="Filter projects">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="documentary">Documentary</button>
+          <button class="filter-btn" data-filter="brand-film">Brand Film</button>
+          <button class="filter-btn" data-filter="animation">Animation</button>
+          <button class="filter-btn" data-filter="ott">OTT IP</button>
+        </div>
+
+        <!-- Grid -->
+        <div class="work-grid work-grid--full">
+
+          <article class="work-card reveal" data-category="documentary">
+            <div class="work-card__img"><div class="work-card__placeholder ph--blue"></div></div>
+            <div class="work-card__info">
+              <h2 class="work-card__title">The Himalayan Archive</h2>
+              <p class="work-card__meta">Documentary &nbsp;·&nbsp; 2024</p>
+            </div>
+          </article>
+
+          <article class="work-card reveal reveal-delay-1" data-category="brand-film">
+            <div class="work-card__img"><div class="work-card__placeholder ph--sepia"></div></div>
+            <div class="work-card__info">
+              <h2 class="work-card__title">Crafted</h2>
+              <p class="work-card__meta">Brand Film &nbsp;·&nbsp; 2024</p>
+            </div>
+          </article>
+
+          <article class="work-card reveal" data-category="documentary">
+            <div class="work-card__img"><div class="work-card__placeholder ph--forest"></div></div>
+            <div class="work-card__info">
+              <h2 class="work-card__title">Voices of the Valley</h2>
+              <p class="work-card__meta">Documentary &nbsp;·&nbsp; 2023</p>
+            </div>
+          </article>
+
+          <article class="work-card reveal reveal-delay-1" data-category="brand-film">
+            <div class="work-card__img"><div class="work-card__placeholder ph--amber"></div></div>
+            <div class="work-card__info">
+              <h2 class="work-card__title">Luminary</h2>
+              <p class="work-card__meta">Brand Film &nbsp;·&nbsp; 2023</p>
+            </div>
+          </article>
+
+          <article class="work-card reveal" data-category="animation">
+            <div class="work-card__img"><div class="work-card__placeholder ph--teal"></div></div>
+            <div class="work-card__info">
+              <h2 class="work-card__title">Thread</h2>
+              <p class="work-card__meta">Animation &nbsp;·&nbsp; 2022</p>
+            </div>
+          </article>
+
+          <article class="work-card reveal reveal-delay-1" data-category="ott">
+            <div class="work-card__img"><div class="work-card__placeholder ph--indigo"></div></div>
+            <div class="work-card__info">
+              <h2 class="work-card__title">The River Speaks</h2>
+              <p class="work-card__meta">OTT IP &nbsp;·&nbsp; 2022</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ── Footer ── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div>
+          <p class="footer__logo">Studio Mahatta</p>
+          <p class="footer__tagline">Boutique production house · New Delhi</p>
+        </div>
+        <nav class="footer__nav" aria-label="Footer navigation">
+          <a href="work.html">Work</a>
+          <a href="services.html">Services</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2025 Studio Mahatta. All rights reserved.</span>
+        <a href="mailto:contact@studiomahatta.com">contact@studiomahatta.com</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
