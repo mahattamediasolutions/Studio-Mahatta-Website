@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Studio Mahatta</title>
+  <meta name="description" content="Get in touch with Studio Mahatta — contact@studiomahatta.com" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ── Navigation ── -->
+  <nav class="nav" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a class="nav__logo" href="index.html">Studio Mahatta</a>
+      <ul class="nav__links" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="work.html">Work</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="btn">Get in Touch</a></li>
+      </ul>
+      <button class="nav__toggle" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ── Mobile overlay ── -->
+  <div class="nav__overlay" role="dialog" aria-label="Navigation menu">
+    <span class="t-eyebrow" style="color:var(--muted)">Navigation</span>
+    <a href="index.html">Home</a>
+    <a href="work.html">Work</a>
+    <a href="services.html">Services</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <p class="nav__overlay-sub">contact@studiomahatta.com</p>
+  </div>
+
+  <!-- ── Page Header ── -->
+  <header class="page-header">
+    <div class="container">
+      <p class="page-header__eyebrow">Let's work together</p>
+      <h1 style="font-family:var(--font-serif);font-size:clamp(44px,7vw,96px);font-weight:300;line-height:1">Contact</h1>
+    </div>
+  </header>
+
+  <main>
+    <section style="padding-top:0" class="section">
+      <div class="container">
+        <div class="contact-grid">
+
+          <!-- Info column -->
+          <div class="reveal">
+            <p class="contact-info__label">Write to us directly</p>
+            <a class="contact-email-link" href="mailto:contact@studiomahatta.com">
+              contact@studiomahatta.com
+            </a>
+            <div class="contact-detail" style="margin-bottom:32px">
+              <p><strong>Studio Mahatta</strong></p>
+              <p>New Delhi, India</p>
+            </div>
+            <div class="contact-detail">
+              <p style="margin-bottom:8px"><strong>For project enquiries</strong><br>Share a brief description of your project and timeline.</p>
+              <p><strong>For collaborations</strong><br>We're always open to conversations with writers, directors, and creative partners.</p>
+            </div>
+          </div>
+
+          <!-- Form column -->
+          <div class="reveal reveal-delay-1">
+            <form class="contact-form" novalidate>
+              <div class="form-row">
+                <div class="form-field">
+                  <label class="form-label" for="name">Name</label>
+                  <input class="form-input" type="text" id="name" name="name" placeholder="Your name" required />
+                </div>
+                <div class="form-field">
+                  <label class="form-label" for="email">Email</label>
+                  <input class="form-input" type="email" id="email" name="email" placeholder="your@email.com" required />
+                </div>
+              </div>
+              <div class="form-field">
+                <label class="form-label" for="project-type">Project Type</label>
+                <select class="form-select" id="project-type" name="project-type">
+                  <option value="" disabled selected>Select a service</option>
+                  <option value="documentary">Documentary Filmmaking</option>
+                  <option value="brand-film">Brand Film</option>
+                  <option value="animation">Animation</option>
+                  <option value="ott">OTT IP Development</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="form-field">
+                <label class="form-label" for="message">Message</label>
+                <textarea class="form-textarea" id="message" name="message" placeholder="Tell us about your project…" required></textarea>
+              </div>
+              <button class="btn btn--filled" type="submit">Send Message</button>
+            </form>
+
+            <div class="form-success" role="alert">
+              <p>Thank you.</p>
+              <p>We've received your message and will be in touch shortly.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ── Footer ── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div>
+          <p class="footer__logo">Studio Mahatta</p>
+          <p class="footer__tagline">Boutique production house · New Delhi</p>
+        </div>
+        <nav class="footer__nav" aria-label="Footer navigation">
+          <a href="work.html">Work</a>
+          <a href="services.html">Services</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2025 Studio Mahatta. All rights reserved.</span>
+        <a href="mailto:contact@studiomahatta.com">contact@studiomahatta.com</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+  }
+
+  ::selection {
+    background-color: #a8834e33;
+    color: #e2d9cc;
+  }
+
+  /* Scrollbar */
+  ::-webkit-scrollbar { width: 4px; }
+  ::-webkit-scrollbar-track { background: #0c0b09; }
+  ::-webkit-scrollbar-thumb { background: #2c2924; border-radius: 2px; }
+  ::-webkit-scrollbar-thumb:hover { background: #a8834e; }
+}
+
+@layer components {
+  /* Reveal animation utility */
+  .reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1),
+                transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .reveal-delay-1 { transition-delay: 0.1s; }
+  .reveal-delay-2 { transition-delay: 0.2s; }
+  .reveal-delay-3 { transition-delay: 0.3s; }
+  .reveal-delay-4 { transition-delay: 0.4s; }
+  .reveal-delay-5 { transition-delay: 0.5s; }
+  .reveal-delay-6 { transition-delay: 0.6s; }
+
+  /* Eyebrow label */
+  .eyebrow {
+    @apply text-eyebrow uppercase tracking-widest text-text-muted font-sans font-light;
+  }
+
+  /* Image placeholder — cinematic dark */
+  .img-placeholder {
+    @apply bg-surface relative overflow-hidden;
+    background-image:
+      linear-gradient(135deg, #1a1916 0%, #131210 50%, #0f0e0c 100%);
+  }
+
+  .img-placeholder::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(
+      -45deg,
+      transparent,
+      transparent 28px,
+      #ffffff04 28px,
+      #ffffff04 29px
+    );
+  }
+}
+
+@layer utilities {
+  .text-balance { text-wrap: balance; }
+}
